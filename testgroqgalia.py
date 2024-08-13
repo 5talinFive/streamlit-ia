@@ -6,13 +6,13 @@ from PIL import Image
 client = Groq(api_key="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")
 
 # Carga las imágenes y ajusta el tamaño
-logo_image = Image.open("./icons/logo-ia.png")  # Imagen del logo junto al título
+logo_image = Image.open("/mount/src/streamlit-ia/icons/logo-ia.png")  # Imagen del logo junto al título
 logo_image = logo_image.resize((70, 70))  # Ajusta el tamaño del logo
 
-user_icon_image = Image.open("./icons/icono-user.png")  # Imagen del icono del usuario
+user_icon_image = Image.open("/mount/src/streamlit-ia/icons/icono-user.png")  # Imagen del icono del usuario
 user_icon_image = user_icon_image.resize((50, 50))  # Ajusta el tamaño del icono del usuario
 
-bot_icon_image = Image.open("./icons/logo-ia.png")  # Imagen del icono de RASGAEL
+bot_icon_image = Image.open("/mount/src/streamlit-ia/icons/logo-ia.png")  # Imagen del icono de RASGAEL
 bot_icon_image = bot_icon_image.resize((50, 50))  # Ajusta el tamaño del icono de RASGAEL
 
 # Agrega el CSS para ajustar el tamaño de las imágenes en dispositivos móviles
