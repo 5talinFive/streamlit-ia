@@ -37,7 +37,7 @@ def get_ia_response(messages):
     completion = client.chat.completions.create(
         model="llama-3.1-70b-versatile",
         messages=messages,
-        temperature=0.7,
+        temperature=0.2,
         max_tokens=1024,
         stream=True,
     )
